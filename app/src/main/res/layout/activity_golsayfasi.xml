@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".golsayfasi">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView2"
+        android:layout_width="423dp"
+        android:layout_height="760dp"
+        android:layout_marginStart="6dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lake"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/durdur"
+        android:layout_width="136dp"
+        android:layout_height="134dp"
+        android:background="@drawable/durdur"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/gifImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/oynat"
+        android:layout_width="136dp"
+        android:layout_height="134dp"
+        android:background="@drawable/oynat"
+        app:layout_constraintBottom_toBottomOf="@+id/gifImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="445dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gifImageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/gri" />
+
+    <TextView
+        android:id="@+id/kar"
+        android:layout_width="292dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="680dp"
+        android:text="Göl Dalgaları"
+        android:textColor="#FFFFFF"
+        android:textSize="37sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gifImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/zamanlayici"
+        android:layout_width="136dp"
+        android:layout_height="134dp"
+        android:background="@drawable/gerisayim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/durdur"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

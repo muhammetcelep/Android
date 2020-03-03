@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/arkapln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/griekran"
+        android:layout_width="408dp"
+        android:layout_height="202dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dg" />
+
+    <ImageView
+        android:id="@+id/griekran2"
+        android:layout_width="414dp"
+        android:layout_height="64dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/griekran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dg" />
+
+    <ImageView
+        android:id="@+id/hgeldiniz"
+        android:layout_width="249dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/griekran2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/griekran2"
+        app:layout_constraintTop_toTopOf="@+id/arkapln"
+        app:srcCompat="@drawable/hogld" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/griekran2"
+        app:layout_constraintVertical_bias="0.654"
+        app:srcCompat="@drawable/devaam" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="345dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962"
+        app:srcCompat="@drawable/kosul" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:text="Başla"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/griekran" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="81dp"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/griekran2"
+        app:layout_constraintVertical_bias="0.317"
+        app:srcCompat="@drawable/rainicon" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="81dp"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.599"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/griekran2"
+        app:layout_constraintVertical_bias="0.317"
+        app:srcCompat="@drawable/snowicon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

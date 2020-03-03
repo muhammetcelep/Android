@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".semsiyesayfasi">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView2"
+        android:layout_width="470dp"
+        android:layout_height="741dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/semsiyeyagmurr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/durdur"
+        android:layout_width="136dp"
+        android:layout_height="134dp"
+        android:background="@drawable/durdur"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/gifImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/oynat"
+        android:layout_width="136dp"
+        android:layout_height="134dp"
+        android:background="@drawable/oynat"
+        app:layout_constraintBottom_toBottomOf="@+id/gifImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="445dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gifImageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/gri" />
+
+    <TextView
+        android:id="@+id/semsiye"
+        android:layout_width="354dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:text="Şemsiyeye Vuran Yağmur"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.012"
+        tools:text="Şemsiyeye Vuran Yağmur" />
+
+    <Button
+        android:id="@+id/zamanlayici"
+        android:layout_width="136dp"
+        android:layout_height="134dp"
+        android:background="@drawable/gerisayim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toEndOf="@+id/durdur"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
